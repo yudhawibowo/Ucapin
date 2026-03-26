@@ -1,0 +1,6 @@
+# Deny access to all files in this directory
+Options -Indexes
+<FilesMatch "\.(php|htaccess|htpasswd|ini|log|sh|sql)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
